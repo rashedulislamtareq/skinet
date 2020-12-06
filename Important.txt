@@ -1,0 +1,22 @@
+
+//Install Entity Framework tool migration
+dotnet tool install --global dotnet-ef --version 3.1.101
+
+//To add migrations
+dotnet ef migrations add InitialCreate -o Data/Migrations
+
+//Update Database
+dotnet ef database update
+
+//Create new project
+dotnet new classlib -o Core
+
+//Add project to solution file
+dotnet sln add Core
+
+//Adding Reference to any project
+dotnet add reference ../Infrastructure
+
+
+
+
