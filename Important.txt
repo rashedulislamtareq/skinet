@@ -17,6 +17,17 @@ dotnet sln add Core
 //Adding Reference to any project
 dotnet add reference ../Infrastructure
 
+// To Drop Database by CLI 
+dotnet ef database drop -p Infrastructure -s API
+
+//To Remove Previous Migrations 
+dotnet ef migrations remove -p Infrastructure -s API
+
+//To Re-Enable Migrations To A Specific Directory
+dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migrations
+
+
+
 
 
 
