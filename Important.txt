@@ -28,6 +28,29 @@ dotnet ef migrations add InitialCreate -p Infrastructure -s API -o Data/Migratio
 
 
 
+//-- Install angular cli latest version or specific version
+npm install -g @angular/cli
+npm install -g @angular/cli@8.3.23
 
+
+
+//-- Uninstall Angular & then clean cache with force or without force 
+npm uninstall -g @angular/cli
+npm cache clean
+npm cache clean --force
+npm cache verify
+
+//-- Add bootstrap for angular
+ng add ngx-bootstrap
+
+//-- Add Font Awesome to angular
+npm install font-awesome
+
+
+
+
+
+
+ 
 
 
